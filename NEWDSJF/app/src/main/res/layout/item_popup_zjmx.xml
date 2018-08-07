@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+   <LinearLayout
+       android:background="@color/pop"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="40dp">
+           <TextView
+               android:id="@+id/tv_zjmx_qb"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_blue"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="全部"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/white"
+               android:layout_height="match_parent" />
+           <TextView
+               android:id="@+id/tv_zjmx_chongzhi"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_huibai"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="充值"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/popfont"
+               android:layout_height="match_parent" />
+           <TextView
+               android:id="@+id/tv_zjmx_tixian"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_huibai"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="提现"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/popfont"
+               android:layout_height="match_parent" />
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_marginTop="20dp"
+           android:layout_marginBottom="20dp"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="40dp">
+           <TextView
+               android:id="@+id/tv_zjmx_tz"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_huibai"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="投资"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/popfont"
+               android:layout_height="match_parent" />
+           <TextView
+               android:id="@+id/tv_zjmx_huikuan"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_huibai"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="回款"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/popfont"
+               android:layout_height="match_parent" />
+           <TextView
+               android:id="@+id/tv_zjmx_qita"
+               android:layout_marginLeft="10dp"
+               android:layout_marginRight="10dp"
+               android:background="@drawable/text_pop_huibai"
+               android:layout_weight="1"
+               android:layout_width="0dp"
+               android:text="其他"
+               android:textSize="20sp"
+               android:gravity="center"
+               android:textColor="@color/popfont"
+               android:layout_height="match_parent" />
+
+       </LinearLayout>
+   </LinearLayout>
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+
+</LinearLayout>

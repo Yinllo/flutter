@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/view_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<!--
+    <TextView
+        android:id="@+id/tv_yj_month"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="本月"
+        android:textSize="20sp"/>          -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_fund_details_item"
+        android:background="@color/mr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

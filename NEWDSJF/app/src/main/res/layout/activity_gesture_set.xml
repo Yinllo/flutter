@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/transparent_statusbar_fit"
+
+    tools:context="com.desjf.dsjr.activity.GestureSetActivity">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/y6"
+        android:paddingTop="@dimen/y6">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x12"
+            android:padding="10dp"
+            android:src="@mipmap/back"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="设置手势密码"
+        android:textColor="@color/font"
+        android:textSize="20sp" />
+
+    <com.desjf.dsjr.widget.GestureView
+        android:id="@+id/gesture"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x40"
+        android:layout_marginRight="@dimen/x40"
+        android:layout_marginTop="@dimen/y20"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tv_jump"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginRight="@dimen/x40"
+        android:padding="@dimen/y10"
+        android:text="跳过"
+        android:textColor="@color/main"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+</LinearLayout>

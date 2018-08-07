@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.desjf.dsjr.activity.MainActivity">
+    <FrameLayout
+        android:id="@+id/fragment_layout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view_bg"/>
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_shouye"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_maintab_shouye"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:textColor="@color/btn_tab_color"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"/>
+        <RadioButton
+            android:id="@+id/btn_invest"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="我要投资"
+            android:textColor="@color/btn_tab_color"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/btn_maintab_invest"/>
+        <RadioButton
+            android:id="@+id/btn_wode"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:textColor="@color/btn_tab_color"
+            android:layout_marginTop="6dp"
+            android:gravity="center_horizontal"
+            android:drawableTop="@drawable/btn_maintab_wode"/>
+
+    </RadioGroup>
+
+
+</LinearLayout>

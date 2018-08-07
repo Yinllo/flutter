@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/huibai"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_redbag_background"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/my_coupon_image">
+
+        <TextView
+            android:id="@+id/tv_redbag_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:text="15.50元"
+            android:textColor="@color/red"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_redbag_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_redbag_money"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:text="有效期至 2017-12-30"
+            android:textSize="14sp" />
+         <TextView
+
+             android:visibility="gone"
+             android:layout_marginLeft="25dp"
+             android:layout_marginTop="5dp"
+             android:text="兑现"
+             android:layout_below="@id/tv_redbag_time"
+             android:textColor="@color/font_gray"
+             android:textSize="14sp"
+             android:id="@+id/red_used_way"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/iv_redbag_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x10"
+            android:layout_marginTop="@dimen/x10"
+            android:src="@mipmap/duixian" />
+
+        <TextView
+            android:id="@+id/tv_redbag_laiyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+
+            android:text="活动赠送;投资≥1000元;仅限新手标使用"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_getmore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/moremessage" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_getmore"
+        android:layout_marginTop="175dp"
+        android:visibility="gone"
+        android:layout_marginLeft="20.8dp"
+        android:layout_marginRight="20.5dp"
+        android:background="@color/coupon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_zdtzje"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="最低投资金额:1000.00元"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

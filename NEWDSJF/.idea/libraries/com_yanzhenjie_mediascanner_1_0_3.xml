@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.yanzhenjie:mediascanner-1.0.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mediascanner-1.0.3.aar/7146b83c9c725df2fbc03be34cd5a48e/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/mediascanner-1.0.3.aar/7146b83c9c725df2fbc03be34cd5a48e/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yanzhenjie/mediascanner/1.0.3/ad86cb45614189a240b51b1b93910e133dce1380/mediascanner-1.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

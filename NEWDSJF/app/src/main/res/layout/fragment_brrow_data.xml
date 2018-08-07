@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    style="@style/transparent_statusbar_fit"
+    tools:context="com.desjf.dsjr.fragment.NewBrrowDataFragment">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            />
+
+      <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/img"
+        android:layout_marginTop="10dp"
+        android:layout_above="@+id/tv_details_login"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_height="100dp">
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="2dp"
+                android:stretchMode="spacingWidthUniform" >
+            </GridView>
+        </LinearLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/tv_empty"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/tv_details_login"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:text="立即登录"
+        android:layout_height="40dp" />
+
+    <!--  以下为 老版本布局文件
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/iv_toleft"
+            android:visibility="invisible"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/toleft"/>
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_toright"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/toright"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sl_hua"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <WebView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_empty"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/tv_details_login"
+        android:layout_width="match_parent"
+        android:background="@color/main"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_height="40dp" />
+-->
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:background="@color/view_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_red"
+        android:layout_width="345dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/red_bag"/>
+
+    <TextView
+        android:id="@+id/tv_red_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/iv_red"
+        android:layout_marginLeft="21dp"
+        android:text="100"
+        android:visibility="gone"
+        android:textColor="@color/red_num"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_red_money"
+        android:layout_toRightOf="@+id/tv_red_money"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/red_num"
+        android:visibility="gone"
+        android:text="元"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_alignLeft="@+id/iv_red"
+        android:layout_marginLeft="21dp"
+        android:text="8.8"
+        android:visibility="visible"
+        android:textColor="@color/red_num"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv_rate_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_rate"
+        android:layout_toRightOf="@+id/tv_rate"
+        android:layout_marginLeft="2dp"
+        android:textColor="@color/red_num"
+        android:visibility="visible"
+        android:text="%"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_toRightOf="@+id/tv_rate_unit"
+        android:text="红包"
+        android:textColor="@color/font"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_money_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_type"
+        android:layout_toRightOf="@+id/tv_rate_unit"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:text="投资金额："
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_type"
+        android:layout_toRightOf="@+id/tv_money_word"
+        android:layout_marginTop="5dp"
+        android:text="≥800元"
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+
+    <TextView
+        android:id="@+id/tv_data_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_money_word"
+        android:layout_toRightOf="@+id/tv_rate_unit"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:text="标的期限："
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+    <TextView
+        android:id="@+id/tv_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_money_word"
+        android:layout_toRightOf="@+id/tv_data_word"
+        android:layout_marginTop="5dp"
+        android:text="≥6个月"
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+
+    <TextView
+        android:id="@+id/tv_from_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_data_word"
+        android:layout_toRightOf="@+id/tv_rate_unit"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="5dp"
+        android:text="奖励来自："
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_data_word"
+        android:layout_toRightOf="@+id/tv_from_word"
+        android:layout_marginTop="5dp"
+        android:text="新手注册"
+        android:textSize="11sp"
+        android:textColor="@color/nfont"/>
+    <TextView
+        android:id="@+id/tv_time_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_red"
+        android:layout_alignLeft="@+id/iv_red"
+        android:layout_marginLeft="21dp"
+        android:layout_marginBottom="5dp"
+        android:text="有效期至"
+        android:textSize="12sp"
+        android:textColor="@color/nfont"/>
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_red"
+        android:layout_toRightOf="@+id/tv_time_word"
+        android:layout_marginBottom="5dp"
+        android:text="2018-10-21"
+        android:textSize="12sp"
+        android:textColor="@color/nfont"/>
+
+    <TextView
+        android:id="@+id/tv_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_red"
+        android:layout_alignRight="@+id/iv_red"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:text="去使用 >"
+        android:textSize="12sp"
+        android:textColor="@color/nfont"/>
+
+
+
+</RelativeLayout>

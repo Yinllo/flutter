@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/transparent_statusbar_fit"
+
+    tools:context="com.desjf.dsjr.activity.GestureTestActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/y35"
+            android:text=""
+            android:textColor="@color/orange" />
+
+        <com.desjf.dsjr.widget.GestureView
+            android:id="@+id/gesture1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/y60"
+            android:layout_marginLeft="@dimen/x40"
+            android:layout_marginRight="@dimen/x40"
+            android:layout_marginTop="@dimen/y15" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/y30"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_forget_gesture_pwd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/y10"
+            android:paddingTop="@dimen/y10"
+            android:text="忘记手势密码?"
+            android:textColor="@color/main" />
+
+        <TextView
+            android:id="@+id/tv_change_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="@dimen/y10"
+            android:paddingTop="@dimen/y10"
+            android:text="用其他账号登录"
+            android:textColor="@color/main" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:background="@color/white"
+    style="@style/transparent_statusbar_fit"
+
+    android:focusableInTouchMode="true"
+    tools:context="com.desjf.dsjr.activity.ReSetJYPswActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/iv_set_jypsw_back"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:id="@+id/tv_project_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="修改交易密码"
+            android:layout_centerInParent="true"
+            android:textColor="@color/font"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/dibu">
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:text="为了保证投资交易为本人操作，请设置交易密码！"
+            android:textColor="@color/orangered"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_wcnm"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="设置交易密码"
+            android:textColor="@color/font"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_wcnm"
+            android:background="@color/view_bg" />
+
+        <EditText
+            android:id="@+id/et_set_jy_psw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/view_one"
+            android:background="@null"
+            android:hint=" 请输入交易密码"
+            android:password="false"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/iv_set_jy_psw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:src="@mipmap/see_psw" />
+    </RelativeLayout>
+
+    <View
+        android:background="@color/huibai"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@color/dibu">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:text="密码为8到20个字，数字+字母"
+            android:textColor="@color/font_gray"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_set_psw_jy"
+        android:gravity="center"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/textview_cricle_btn"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:text="设置交易密码"/>
+
+</LinearLayout>

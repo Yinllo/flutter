@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/transparent_statusbar_fit"
+
+    tools:context="com.desjf.dsjr.activity.AccountMyZhuanRActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/iv_wdzr_back"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="我的转让"
+            android:textColor="@color/font"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/huibai"/>
+    <RadioGroup
+        android:id="@+id/rg_wdzr"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_wdzr_kzr"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="可转让"
+            android:textColor="@color/btn_tab_color"
+            android:gravity="center"/>
+        <RadioButton
+            android:id="@+id/btn_wdzr_wrz"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="转让中"
+            android:textColor="@color/btn_tab_color"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/btn_wdzr_yzr"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="已转让"
+            android:textColor="@color/btn_tab_color"
+            android:gravity="center" />
+
+    </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/huibai"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_wdzr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

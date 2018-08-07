@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/transparent_statusbar_fit"
+    android:background="@color/view_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.desjf.dsjr.fragment.MyRedBagFragment">
+
+    <!--
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:text="*请输入正确的兑换码"
+        android:textSize="12sp"
+        android:textColor="@color/redbag_tishi"
+
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/huibai"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+
+            android:id="@+id/et_my_red_bag"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:paddingLeft="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background_two"
+            android:cursorVisible="true"
+            android:gravity="center"
+            android:textColor="@color/ntmblack"
+            android:textSize="15sp"
+            />
+
+        <Button
+            android:id="@+id/btn_my_redbag_duihuan"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@mipmap/btn_change"
+            android:text="兑换"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_redBag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_my_redbag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/view_bg"/>
+
+
+</LinearLayout>

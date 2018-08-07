@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="#f8f8f8">
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="时间"
+            android:textColor="@color/nfont"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:text="期数"
+            android:textColor="@color/nfont"/>
+
+
+        <TextView
+            android:id="@+id/acount"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:text="已回本金"
+            android:textSize="12sp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/rate"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:text="已回利息"
+                android:textSize="12sp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+     </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_bg"/>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_huikuan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_huikuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/view_bg"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="15dp"
+        android:textSize="13sp"
+        android:text="累计已回本金:"/>
+    <TextView
+        android:id="@+id/tv_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="15dp"
+        android:textSize="13sp"
+        android:text="累计已回利息:"/>
+    </LinearLayout>
+</LinearLayout>

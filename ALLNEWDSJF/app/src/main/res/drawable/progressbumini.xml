@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 进度条里面的背景 -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="10dp" />
+            <gradient
+                android:endColor="#ff6d33"
+                android:startColor="#ff6d33" />
+        </shape>
+    </item>
+    <!-- 第二进度条的背景   左边是圆形 但右边不能-->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="5dip" />
+
+                <gradient
+                    android:angle="270"
+                    android:centerY="0.75"
+                    android:endColor="#FFFFF0"
+                    android:startColor="#FFFFF0" />
+            </shape>
+        </clip>
+    </item>
+
+
+
+
+
+</layer-list>

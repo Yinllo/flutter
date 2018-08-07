@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/view_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_redbag_background"
+        android:layout_width="345dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@mipmap/redbag_wei">
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:text="红包"
+            android:textColor="@color/font"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_type"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="投资金额：≥800元"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_redbag_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_money"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="标的期限：≥1个月"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_redbag_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_redbag_data"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="奖励来自：新手注册"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_redbag_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_redbag_from"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:text="有效期至：2017-12-30"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_redbag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_redbag_button"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:typeface="sans"
+            android:text="¥"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_redbag_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv_redbag"
+            android:layout_marginTop="30dp"
+            android:text="100"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tv_i_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/tv_i"
+            android:text="8.88"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+        <TextView
+            android:id="@+id/tv_i"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_alignParentRight="true"
+            android:text="%"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_redbag_button"
+            android:layout_width="68dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="75dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="点击使用"
+            android:gravity="center"
+            android:background="@drawable/text_view_border"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

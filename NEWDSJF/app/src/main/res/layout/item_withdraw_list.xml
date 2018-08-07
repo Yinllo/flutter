@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/tv_withdraw_txje"
+            android:gravity="center"
+            android:textColor="@color/nfont"
+            android:text="提现金额"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <!--
+
+        <TextView
+            android:id="@+id/tv_withdraw_dzje"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="到账金额"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/huibai"/>         -->
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_withdraw_txsj"
+                android:gravity="center"
+                android:textColor="@color/nfont"
+                android:text="提现时间"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <!--
+            <TextView
+                android:id="@+id/tv_withdraw_txsj_two"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="提现时间"
+                android:singleLine="true"
+                android:textSize="11sp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />        -->
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_withdraw_zt"
+            android:gravity="center"
+            android:textColor="@color/nfont"
+            android:text="状态"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+<!--
+        <TextView
+            android:id="@+id/tv_withdraw_cz"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="操作"
+            android:textColor="@color/black" />
+-->
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/huibai"/>
+
+
+
+</LinearLayout>

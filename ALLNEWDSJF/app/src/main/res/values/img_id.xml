@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="pager_image1" type="id" />
+    <item name="pager_image2" type="id" />
+    <item name="pager_image3" type="id" />
+</resources>

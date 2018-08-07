@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--设置四周边框
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    //设置框中间部分颜色值
+    <solid android:color="#dbe0fe" />
+    //设置边框颜色值
+    <stroke
+        android:width="1dp"
+        android:color="@color/recharge_line" />
+</shape>         -->
+
+<!--使用layer-list 画出没有底部边框的 边框-->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--设置边框颜色值-->
+    <item>
+        <shape>
+            <solid android:color="@color/recharge_line"/>
+        </shape>
+    </item>
+    <!--设置框中间部分颜色值-->
+    <!--距离上面一层的顶部1dp,类似marginTop-->
+    <item android:top="1dp" android:left="1dp" android:right="1dp"><!--上、左、右设置边框-->
+        <shape>
+            <solid android:color="#dbe0fe"/>
+        </shape>
+    </item>
+
+</layer-list>
+

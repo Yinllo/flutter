@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    style="@style/transparent_statusbar_fit"
+    android:layout_height="match_parent">
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height= "fill_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/iv_web_back"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@mipmap/back"/>
+        <TextView
+            android:id="@+id/tv_web_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="邀请好友"
+            android:textColor="@color/shenhei"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

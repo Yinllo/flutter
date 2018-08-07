@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             tools:context="com.desjf.dsjr.ui.fragment.InvestFragment">
+
+    <RadioGroup
+        android:id="@+id/rg_invest"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btn_standard_powder"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="企业贷"
+            android:textColor="@color/font"
+            android:gravity="center" />
+        <RadioButton
+            android:id="@+id/btn_debt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:button="@null"
+            android:layout_height="match_parent"
+            android:text="可转债"
+            android:textColor="@color/font"
+            android:gravity="center" />
+
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/standard"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/nmainOrign"/>
+        <View
+            android:id="@+id/debt"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/huibai"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/view_bg"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_invest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

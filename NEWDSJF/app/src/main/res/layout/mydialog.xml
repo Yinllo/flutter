@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y117"
+    android:orientation="vertical" >
+
+
+        <TextView
+            android:id="@+id/tv_dialog_message"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y85"
+            android:background="@drawable/shape_corner_up"
+            android:padding="@dimen/x5"
+            android:textSize="15sp"
+            android:gravity="center"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/lightgrey"
+            android:layout_height="1dp"></View>
+
+        <TextView
+            android:id="@+id/tv_dialog_ok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y32"
+            android:background="@drawable/shape_corner_down"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp"
+            />
+
+</LinearLayout>

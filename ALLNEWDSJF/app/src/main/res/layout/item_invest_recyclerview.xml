@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="115dp">
+
+
+        <TextView
+            android:id="@+id/tv_product_title"
+            style="@style/LeftStyle"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="活动专区00266"
+            android:textSize="12sp"
+            android:textColor="@color/font" />
+        <TextView
+            android:id="@+id/tv_advertisement_one"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/tv_product_title"
+            android:layout_alignBaseline="@+id/tv_product_title"
+            android:background="@drawable/text_view_type_border_red"
+            style="@style/AdStyle"
+            android:gravity="center"
+            android:text="新手专享"
+            android:textColor="@color/red"/>
+        <TextView
+            android:id="@+id/tv_advertisement_two"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_advertisement_one"
+            android:layout_alignBaseline="@+id/tv_product_title"
+            android:background="@drawable/text_view_type_border_red"
+            style="@style/AdStyle"
+            android:gravity="center"
+            android:text="每人限投两万"
+            android:textColor="@color/red"/>
+
+        <TextView
+            android:id="@+id/tv_invest_rate"
+            style="@style/LeftStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_advertisement_one"
+            android:text="6.6"
+            android:textColor="@color/main"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_invest_rate_unit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_alignBaseline="@+id/tv_invest_rate"
+            android:layout_toRightOf="@+id/tv_invest_rate"
+            android:layout_below="@+id/tv_advertisement_one"
+            android:text="%"
+            android:textColor="@color/main"
+            android:textSize="11sp" />
+        <TextView
+            android:id="@+id/tv_invest_rate_ad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_invest_rate_unit"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/tv_invest_rate_unit"
+            android:text="+8%"
+            android:textColor="@color/number"
+            android:textSize="11sp"/>
+        <TextView
+            android:id="@+id/tv_invest_rate_text"
+            style="@style/LeftStyle"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_invest_rate"
+            android:text="年化利率"
+            android:textColor="@color/font_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_invest_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3个月"
+            android:textColor="@color/font"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_invest_limit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="每月还息"
+            android:textColor="@color/font_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_invest_residue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余5000000"
+            android:textColor="@color/font"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_invest_allMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="总额88万"
+            android:textColor="@color/font_gray" />
+
+        <com.desjf.dsjr.widget.CustomProgress
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:bigCircleColor="#f0f0f0"
+            app:circleColor="#ff6200"
+            app:radius="29dp"
+            app:ringColor="#ffad76"
+            app:strokeWidth="4dp"
+            app:textColor="#fff" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view_bg"/>
+
+</RelativeLayout>

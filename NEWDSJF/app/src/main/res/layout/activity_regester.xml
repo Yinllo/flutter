@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/transparent_statusbar_fit"
+    android:background="@color/white"
+    tools:context="com.desjf.dsjr.activity.RegistActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/back"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/login_logo_new"/>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:inputType="phone|number"
+            android:layout_height="45dp"
+            android:maxLength="11"
+            android:textSize="@dimen/size_4"
+            android:textColorHint="@color/n_font_gray"
+            android:hint=" 请输入手机号"/>
+        <ImageView
+            android:id="@+id/iv_clear"
+            android:layout_marginRight="30dp"
+            android:visibility="invisible"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/clear"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_verify_code"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/size_4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColorHint="@color/n_font_gray"
+            android:hint=" 请输入短信验证码"/>
+        <TextView
+            android:id="@+id/getmobile"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" 获取短信验证码"
+            android:textSize="15sp"
+            android:textColor="@color/nmainOrign"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_centerInParent="true"
+            android:password="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textSize="@dimen/size_4"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:textColorHint="@color/n_font_gray"
+            android:hint="密码为8到20个字，数字+字母"/>
+        <ImageView
+            android:id="@+id/iv_psw_see"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/unsea_psw"/>
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_invite_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textSize="@dimen/size_4"
+        android:layout_width="match_parent"
+        android:inputType="phone|number"
+        android:layout_height="45dp"
+        android:maxLength="11"
+        android:textColorHint="@color/n_font_gray"
+        android:hint=" 推荐人手机号(选填)"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/xieyi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/login_check_box_remember_psw" />
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="已阅读德晟金服"
+            android:textColor="@color/nfont"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="6dp"
+            android:text="《德晟金服用户服务协议》"
+            android:textColor="@color/nmainOrign"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+    <TextView
+        android:id="@+id/tv_mobile_commite"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/textview_cricle_btn"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:text="确认注册"/>
+
+</RelativeLayout>
+
+</LinearLayout>

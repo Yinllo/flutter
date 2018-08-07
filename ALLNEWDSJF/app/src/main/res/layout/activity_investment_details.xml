@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/ll_investment_details"
+              style="@style/transparent_statusbar_fit"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              tools:context="com.desjf.dsjr.ui.activity.InvestmentDetailsActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:background="@mipmap/product_bg"
+                android:scaleType="centerCrop"/>
+
+
+            <TextView
+                android:id="@+id/tv_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="84dp"
+                android:layout_marginTop="16dp"
+                android:text="15"
+                android:textColor="@color/number"
+                android:textSize="36sp"/>
+
+            <TextView
+                android:id="@+id/tv_rate_sign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_rate"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tv_rate"
+                android:text="%"
+                android:textColor="@color/number"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/tv_rate_ad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_rate_sign"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@+id/tv_rate_sign"
+                android:text="+8%"
+                android:textColor="@color/number"
+                android:textSize="11sp"
+                android:visibility="visible"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:background="@color/small_line"/>
+
+            <TextView
+                android:id="@+id/tv_rate_word"
+                style="@style/InvestmentTextStyleOne"
+                android:layout_below="@+id/tv_rate"
+                android:layout_marginLeft="86dp"
+                android:layout_marginTop="6dp"
+                android:text="@string/year_rate"/>
+
+            <TextView
+                android:id="@+id/tv_limit_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_rate"
+                android:layout_alignLeft="@+id/tv_limit_time_word"
+                android:text="3"
+                android:textColor="@color/font"
+                android:textSize="21sp"/>
+
+            <TextView
+                android:id="@+id/tv_limit_time_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/tv_limit_time_word"
+                android:layout_alignBaseline="@+id/tv_limit_time"
+                android:layout_marginBottom="11dp"
+                android:layout_toRightOf="@+id/tv_limit_time"
+                android:text="个月"
+                android:textColor="@color/font"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_limit_time_word"
+                style="@style/InvestmentTextStyleOne"
+                android:layout_width="wrap_content"
+                android:layout_alignBaseline="@+id/tv_rate_word"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="96dp"
+                android:text="@string/limit_time"/>
+
+
+            <TextView
+                android:id="@+id/tv_way_word"
+                style="@style/InvestmentTextStyleOne"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:text="@string/way_word"/>
+
+            <TextView
+                android:id="@+id/tv_way"
+                style="@style/InvestmentTextStyleTwo"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_alignLeft="@+id/tv_way_word"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/cue"
+                android:text="满标计息"/>
+
+            <TextView
+                android:id="@+id/tv_residue_word"
+                style="@style/InvestmentTextStyleOne"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="70dp"
+                android:layout_toLeftOf="@+id/tv_way_word"
+                android:text="@string/residue_word"/>
+
+            <TextView
+                android:id="@+id/tv_residue"
+                style="@style/InvestmentTextStyleTwo"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_alignLeft="@+id/tv_residue_word"
+                android:layout_marginBottom="10dp"
+                android:text="¥888888"/>
+
+            <TextView
+                android:id="@+id/tv_repayment_word"
+                style="@style/InvestmentTextStyleOne"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="70dp"
+                android:layout_toRightOf="@+id/tv_way_word"
+                android:text="@string/repayment_word"/>
+
+            <TextView
+                android:id="@+id/tv_repayment"
+                style="@style/InvestmentTextStyleTwo"
+                android:layout_alignBottom="@+id/iv_bg"
+                android:layout_alignLeft="@+id/tv_repayment_word"
+                android:layout_marginBottom="10dp"
+                android:drawablePadding="4dp"
+                android:drawableRight="@mipmap/cue"
+                android:text="等额本息"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bg"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/timerView"
+                android:background="@mipmap/time"/>
+
+            <com.desjf.dsjr.widget.TimerView
+                android:id="@+id/timerView"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                android:layout_below="@+id/iv_bg"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/nfont"/>
+
+            <ImageView
+                android:id="@+id/iv_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_bg"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/timerView"
+                android:background="@mipmap/cue"/>
+
+            <View
+                android:id="@+id/view_one"
+                style="@style/middle_line"
+                android:layout_below="@+id/timerView"/>
+
+
+            <TextView
+                android:id="@+id/tv_account_residue_money_word"
+                style="@style/InvestmentTextStyleThree"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_one"
+                android:text="@string/account_residue_money_word"/>
+
+            <TextView
+                android:id="@+id/tv_account_residue_money"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_one"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/tv_account_residue_money_word"
+                android:gravity="center_vertical"
+                android:text="8888888888元"
+                android:textColor="@color/font"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_charge_btn"
+                android:layout_width="45dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_one"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/text_view_type_border_orange"
+                android:gravity="center"
+                android:text="充值"
+                android:textColor="@color/number"
+                android:textSize="13sp"/>
+
+            <View
+                android:id="@+id/view_two"
+                style="@style/middle_line"
+                android:layout_below="@+id/tv_account_residue_money_word"/>
+
+
+            <TextView
+                android:id="@+id/tv_red"
+                style="@style/InvestmentTextStyleThree"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_two"
+                android:text="@string/red"/>
+
+            <TextView
+                android:id="@+id/tv_red_money"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_two"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/tv_red"
+                android:gravity="center_vertical"
+                android:text="8个可用"
+                android:textColor="@color/font_gray"
+                android:textSize="14sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_choose_prize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_two"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_choose"
+                    style="@style/InvestmentTextStyleFour"
+                    android:text="请选择"/>
+
+                <TextView
+                    android:id="@+id/tv_red_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="10元"
+                    android:textColor="@color/number"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_type"
+                    style="@style/InvestmentTextStyleFour"
+                    android:layout_below="@+id/view_two"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@mipmap/arrow_right"
+                    android:text="奖励"/>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view_three"
+                style="@style/middle_line"
+                android:layout_below="@+id/tv_red"/>
+
+            <TextView
+                android:id="@+id/tv_invest_money_word"
+                style="@style/InvestmentTextStyleThree"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_three"
+                android:text="@string/invest_money_word"/>
+
+            <EditText
+                android:id="@+id/tv_invest_money"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_three"
+                android:layout_marginLeft="23dp"
+                android:layout_toLeftOf="@+id/tv_invest_all"
+                android:layout_toRightOf="@+id/tv_invest_money_word"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/invest_money"
+                android:textColor="@color/font"
+                android:textColorHint="@color/hint"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_invest_all"
+                style="@style/InvestmentTextStyleFour"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_three"
+                android:layout_marginRight="15dp"
+                android:text="@string/invest_all"/>
+
+
+            <View
+                android:id="@+id/view_four"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_below="@+id/tv_invest_all"
+                android:background="@color/big_line"/>
+
+            <TextView
+                android:id="@+id/tv_anticipated_income_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_invest_all"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/anticipated_income_word"
+                android:textColor="@color/nfont"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_anticipated_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_invest_all"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/tv_anticipated_income_word"
+                android:text="0.00元"
+                android:textColor="@color/number"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_real_income_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_anticipated_income_word"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/real_income_word"
+                android:textColor="@color/nfont"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_real_income"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_anticipated_income_word"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/tv_anticipated_income_word"
+                android:text="0.00元"
+                android:textColor="@color/nfont"
+                android:textSize="13sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_pwd_word"
+                style="@style/InvestmentTextStyleThree"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_four"
+                android:text="@string/pwd_word"/>
+
+            <EditText
+                android:id="@+id/et_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_four"
+                android:layout_marginLeft="23dp"
+                android:layout_toLeftOf="@+id/tv_pwd_btn"
+                android:layout_toRightOf="@+id/tv_pwd_word"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/et_pwd"
+                android:textColor="@color/font"
+                android:textColorHint="@color/hint"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_pwd_btn"
+                style="@style/InvestmentTextStyleFour"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_four"
+                android:layout_marginRight="15dp"
+                android:text="@string/forget"/>
+
+            <View
+                android:id="@+id/view_six"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/tv_pwd_btn"
+                android:background="@color/big_line"/>
+
+
+            <TextView
+                android:id="@+id/tv_code_word"
+                style="@style/InvestmentTextStyleThree"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_six"
+                android:text="@string/code_word"/>
+
+            <EditText
+                android:id="@+id/et_code"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/view_six"
+                android:layout_marginLeft="23dp"
+                android:layout_toLeftOf="@+id/tv_code_btn"
+                android:layout_toRightOf="@+id/tv_code_word"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/code_hint"
+                android:textColor="@color/font"
+                android:textColorHint="@color/hint"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_code_btn"
+                style="@style/InvestmentTextStyleFour"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/view_six"
+                android:layout_marginRight="15dp"
+                android:text="@string/get_command"/>
+
+            <View
+                android:id="@+id/view_five"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/tv_code_btn"
+                android:background="@color/big_line"/>
+
+            <CheckBox
+                android:id="@+id/cb_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_code_btn"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="16dp"
+                android:background="@null"
+                android:button="@null"
+                android:checked="false"
+                android:drawableLeft="@drawable/login_check_box_remember_psw"
+                android:drawablePadding="8dp"
+                android:text="@string/read"
+                android:textColor="@color/nfont"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_risk_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_code_btn"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/cb_choose"
+                android:text="@string/risk_book"
+                android:textColor="@color/red_choose"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/noway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_code_btn"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/tv_risk_book"
+                android:text="及"
+                android:textColor="@color/nfont"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_electronic_signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_code_btn"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/noway"
+                android:text="@string/electronic_signature"
+                android:textColor="@color/red_choose"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_invest_btn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/tv_electronic_signature"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/textview_cricle_btn"
+                android:gravity="center"
+                android:text="@string/invest_btn"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_see_info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_invest_btn"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/arrow_up"
+                android:drawablePadding="10dp"
+                android:gravity="center"
+                android:text="@string/see_info_btn"
+                android:textColor="@color/nfont"
+                android:textSize="14sp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

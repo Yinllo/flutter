@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/container">
+
+    <ImageView
+        android:id="@+id/expend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/ic_chevron_right_black_24dp"/>
+
+    <TextView
+        android:id="@+id/tv_notice_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="7dp"
+        android:layout_toRightOf="@+id/iv_round"
+        android:text="爱神的箭射中了每一个幸福的人"
+        android:textSize="14sp"
+        android:textColor="@color/font"/>
+
+    <TextView
+        android:id="@+id/tv_notice_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_alignLeft="@+id/tv_notice_title"
+        android:layout_below="@+id/tv_notice_title"
+        android:text="2018-4-28 14:57:00"
+        android:textSize="12sp"
+        android:textColor="@color/font_gray"/>
+
+    <ImageView
+        android:id="@+id/iv_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:src="@mipmap/round"/>
+
+    <View
+        android:id="@+id/parent_dashed_view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="15dp"
+        android:layerType="software"
+        android:layout_below="@id/tv_notice_data"
+        android:background="@drawable/dashed_style_view"/>
+
+</RelativeLayout>

@@ -1,0 +1,241 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--状态栏颜色-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--控制各个控件被选中时的颜色-->
+        <item name="colorAccent">@color/nmainOrign</item>
+        <!--页面背景色-->
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="NOTITLEBAR" parent="@style/Theme.AppCompat.Light.NoActionBar"></style>
+
+    <!--自定义APP主题-->
+    <style name="StatusBarTransparentTheme" parent="AppTheme"></style>
+
+    <style name="TransparentTheme" parent="AppTheme">
+        <item name="android:windowBackground">@color/transparent</item>
+    </style>
+
+    <!--自定义Dialog样式-->
+    <style name="My_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <!--BaseDialog样式-->
+    <style name="dialog_anim_bottom">
+        <item name="android:windowEnterAnimation">@anim/dialog_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_bottom_out</item>
+    </style>
+    <style name="dialog_anim_top">
+        <item name="android:windowEnterAnimation">@anim/dialog_top_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_top_out</item>
+    </style>
+    <style name="dialog_zoom">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_out</item>
+    </style>
+
+
+    <!--自定义Dialog样式的Avtivity-->
+    <style name="MyDialogActivityStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!--自定义动态加载动画-->
+    <style name="curprogressbar" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minHeight">30dp</item>
+        <item name="android:minWidth">30dp</item>
+        <item name="android:maxHeight">30dp</item>
+        <item name="android:maxWidth">30dp</item>
+    </style>
+
+    <!--自定义TabLayout控件的字体样式-->
+    <style name="TabLayoutTextSize" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+
+    <!--自定义ProgressBar控件的样式-->
+    <style name="StyleProgressBar" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/progressbumini</item>
+    </style>
+
+    <!--自定义水平分割线-->
+    <style name="common_horizontal_division_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+
+    <!--自定义垂直分割线-->
+    <style name="common_vertical_division_line_style">
+        <item name="android:layout_width">0.5dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+
+    <!--自定义布局样式-->
+    <style name="transparent_statusbar_fit">
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">false</item>
+    </style>
+
+    <style name="StatusBarTransparentTheme.AppBarOverlay"
+           parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="StatusBarTransparentTheme.PopupOverlay"
+           parent="ThemeOverlay.AppCompat.Light"/>
+
+
+    <!--xml中控件布局样式-->
+    <style name="TextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font</item>
+    </style>
+
+    <!--投资详情xml中控件布局样式 上方 灰色字体-->
+    <style name="InvestmentTextStyleOne">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font_gray</item>
+    </style>
+    <!--投资详情xml中控件布局样式 上方 黑色字体-->
+    <style name="InvestmentTextStyleTwo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/font</item>
+    </style>
+    <!--投资详情xml中控件布局样式 图片下方左边部分的  字体-->
+    <style name="InvestmentTextStyleThree">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/nfont</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--投资详情xml中控件布局样式   蓝色字体-->
+    <style name="InvestmentTextStyleFour">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red_choose</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!--个人中心-->
+    <style name="listStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:drawableRight">@mipmap/arrow_right</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:drawablePadding">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/font</item>
+    </style>
+
+    <!--1dp分割线-->
+    <style name="small_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/small_line</item>
+    </style>
+    <!--10dp分割线-->
+    <style name="big_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">10dp</item>
+        <item name="android:background">@color/big_line</item>
+    </style>
+    <!--5dp分割线-->
+    <style name="middle_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@color/big_line</item>
+    </style>
+
+    <!--xml中广告位布局样式-->
+    <style name="AdStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+    </style>
+
+    <!--RadioButton样式-->
+    <style name="RadioButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!--最左边通用样式-->
+    <style name="LeftStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+
+    <!--通用左右间距样式-->
+    <style name="LRSeparationDistanceStyle">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">15dp</item>
+    </style>
+
+    <!--通用左间距样式-->
+    <style name="LSeparationDistanceStyle">
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--通用右间距样式-->
+    <style name="RSeparationDistanceStyle">
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

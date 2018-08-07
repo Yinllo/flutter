@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/transparent_statusbar_fit"
+
+    tools:context="com.desjf.dsjr.fragment.ProjectDetailsFragment">
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:id="@+id/iv_toleft"
+            android:visibility="invisible"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/toleft"/>
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_toright"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/toright"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sl_hua"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--<TextView-->
+            <!--android:id="@+id/tv_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/font"-->
+            <!--android:textSize="10sp"-->
+            <!--/>-->
+        <WebView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+    </ScrollView>
+
+    <!--
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_empty"
+
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/nodata"/>
+        <TextView
+            android:id="@+id/tv_emptys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/font_gray"
+            android:text="您暂无相关数据信息！"/>
+    </LinearLayout>
+
+
+
+    -->
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:gravity="center"
+        android:text="暂无数据"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:id="@+id/tv_details_login"
+        android:layout_width="match_parent"
+        android:background="@color/main"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_height="40dp" />
+
+</LinearLayout>

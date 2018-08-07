@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_describe"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:text="期限>=12个月"
+        android:textColor="@color/nfont"
+        android:textSize="12sp"
+        android:layout_gravity="center"
+        android:gravity="left|center"/>
+
+</LinearLayout>
