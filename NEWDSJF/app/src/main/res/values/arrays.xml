@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string-array name="auto_bidding_operation">
-        <item>@string/delete</item>
-        <item>@string/cancel</item>
-    </string-array>
-</resources>
