@@ -24,6 +24,8 @@ dependencies:
 
   shared_preferences: ^0.4.2
   flutter_redux: ^0.5.2
+    # 网络框架
+  dio: 2.1.0
 
 dev_dependencies:
   flutter_test:
